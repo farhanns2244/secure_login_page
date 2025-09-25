@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+<h2>Register</h2>
+<form method="POST">
+  <label>Username</label><br>
+  <input type="text" name="username" required><br><br>
+    <label>Email id</label><br>
+  <input type="email" name="email" required><br><br>
+  <label>Password</label><br>
+  <input type="password" name="password" required><br><br>
+
+     <div class="g-recaptcha" data-sitekey="6LeEz9MrAAAAAKFN95E30_YCk_jKaNG8NNFcnUbE"></div>
+
+  <button type="submit">Register</button>
+</form>
+    <a href="{{ url_for('login') }}">Already have account?</a>
+
+</div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}
+
