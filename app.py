@@ -39,7 +39,7 @@ mail = Mail(app)
 # Home route
 @app.route('/')
 def home():
-    return render_template('base.html')
+    return render_template('index.html')
 
 # Registration
 @app.route('/register', methods=['GET', 'POST'])
